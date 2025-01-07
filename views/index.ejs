@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .container{
+        margin: 0%;
+        padding: 0%;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    input{
+        padding: 5px 15px;
+        border-radius: 10px;
+        border: 2px solid black ;
+        font-size: 17px;
+        width: 400px;
+    }
+
+    button{
+        padding: 10px 20px;
+        border: none;
+        background-color: green;
+        color: white;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+
+
+
+</style>
+
+<body>
+    
+    <div class="container">
+
+        <form action="/register" method="post" class="form">
+
+            <h1 align="center">Login Page </h1>
+
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+
+            <input type="email" name="email" id="email" placeholder="Enter your mail">
+
+            <input type="password" name="pass" id="pass" placeholder="Enter password">
+
+            <button type="submit">Login</button>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
